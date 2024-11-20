@@ -10,6 +10,34 @@ let isResponseGenerating = false;
 // API configuration
 const API_KEY = "AIzaSyAz7Cc22lLRcLSR2XSF7lMot_91WxlXfYw"; // Your API key here
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;
+function fetchReactJS() {
+  const url = `${apiUrl}/your-endpoint?topic=ReactJS&key=${apiKey}`;
+  fetch(url)
+    .then(response => response.json())
+    .then(data => handleResponse(data, 'ReactJS'))
+    .catch(error => console.error('Error:', error));
+}
+
+function fetchReactNative() {
+  const url = `${apiUrl}/your-endpoint?topic=ReactNative&key=${apiKey}`;
+  fetch(url)
+    .then(response => response.json())
+    .then(data => handleResponse(data, 'ReactNative'))
+    .catch(error => console.error('Error:', error));
+}
+
+function handleResponse(data, topic) {
+  const message = `Info about ${topic}: ${data.info}`;
+  displayMessage(message);
+}
+
+function displayMessage(message) {
+  // ur existing function to show messages in the chat
+}
+
+// u can call these functions separately based on user input
+fetchReactJS();
+fetchReactNative();
 
 // Load theme and chat data from local storage on page load
 const loadDataFromLocalstorage = () => {
