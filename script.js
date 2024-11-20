@@ -11,7 +11,7 @@ let isResponseGenerating = false;
 const API_KEY = "AIzaSyAz7Cc22lLRcLSR2XSF7lMot_91WxlXfYw"; // Your API key here
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;
 function fetchReactJS() {
-  const url = `${apiUrl}/your-endpoint?topic=ReactJS&key=${apiKey}`;
+  const url = `${https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}}/your-endpoint?topic=ReactJS&key=${AIzaSyAz7Cc22lLRcLSR2XSF7lMot_91WxlXfYw}`;
   fetch(url)
     .then(response => response.json())
     .then(data => handleResponse(data, 'ReactJS'))
@@ -19,7 +19,7 @@ function fetchReactJS() {
 }
 
 function fetchReactNative() {
-  const url = `${apiUrl}/your-endpoint?topic=ReactNative&key=${apiKey}`;
+  const url = `${https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}}/your-endpoint?topic=ReactNative&key=${AIzaSyAz7Cc22lLRcLSR2XSF7lMot_91WxlXfYw}`;
   fetch(url)
     .then(response => response.json())
     .then(data => handleResponse(data, 'ReactNative'))
